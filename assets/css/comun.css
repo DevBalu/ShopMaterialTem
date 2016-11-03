@@ -1,0 +1,45 @@
+/*--------------------General properties-----------------------*/
+p {
+  font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+}
+.centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+nav {
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+}
+nav a {
+  font-weight: 100;
+}
+nav ul a {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.os nav {
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+}
+/*----------------Individual properties-----------------------------------*/
