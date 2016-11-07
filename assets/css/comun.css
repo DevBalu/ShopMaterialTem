@@ -38,8 +38,4 @@ nav ul a {
   font-weight: 700;
   color: #000;
 }
-.os nav {
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
-}
 /*----------------Individual properties-----------------------------------*/

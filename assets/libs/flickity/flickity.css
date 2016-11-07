@@ -128,3 +128,29 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+/* external css: flickity.css */
+.carousel {
+  height: 160px;
+}
+.carousel-cell {
+  width: 28%;
+  height: 160px;
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  /*background: #ED2;*/
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: #c9c9c9;
+}

@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="libs/flickity/flickity.min.css">
+    <link rel="stylesheet" href="libs/flickity/flickity.css">
     <link rel="stylesheet" href="css/comun.css">
   </head>
   <body>
@@ -14,11 +14,13 @@
       <div class="container">
         <nav> 
           <div class="nav-wrapper"><a href="#" class="brand-logo left">LOVE GAME</a>
+            <ul class="right">
+              <li><a href="#" data-activates="dropdown" class="dropdown-button"> <i class="material-icons">reorder</i></a></li>
+            </ul>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#">CATALOG</a></li>
               <li><a href="#">POPULAR</a></li>
               <li><a href="#">INFORMATION</a></li>
-              <li><a href="#" data-activates="dropdown" class="dropdown-button">Dropdown <i class="material-icons right">arrow_drop_down</i></a></li>
               <ul id="dropdown" class="dropdown-content">
                 <li><a href="#">CATALOG</a></li>
                 <li><a href="#">POPULAR</a></li>
@@ -32,39 +34,53 @@
         <ul class="slides">
           <li><img src="img/grl1.png">
             <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5>class="light grey-text text-lighten-3"Here's our small slogan.    </h5>
+              <h2>Right Aligned Caption</h2>
+              <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
             </div>
           </li>
           <li><img src="img/grl2.png">
             <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5>class="light grey-text text-lighten-3"Here's our small slogan.</h5>
+              <h2>Right Aligned Caption</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum molestias vitae consequatur minus consequuntur officia, voluptate placeat quia quam eum, nam possimus, laudantium error ut dolore quae nesciunt maxime!</h4>
             </div>
           </li>
           <li><img src="img/grl3.png">
             <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5>class="light grey-text text-lighten-3"Here's our small slogan.</h5>
+              <h2>Right Aligned Caption</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum molestias vitae consequatur minus consequuntur officia, voluptate placeat quia quam eum, nam possimus, laudantium error ut dolore quae nesciunt maxime!</h4>
             </div>
           </li>
           <li><img src="img/grl4.png">
             <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5>class="light grey-text text-lighten-3"Here's our small slogan.</h5>
+              <h2>Right Aligned Caption</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum molestias vitae consequatur minus consequuntur officia, voluptate placeat quia quam eum, nam possimus, laudantium error ut dolore quae nesciunt maxime!</h4>
             </div>
           </li>
-          <li><img src="img/grl8.png">
+          <li><img src="img/grl3.png">
             <div class="caption right-align">
-              <h3>Right Aligned Caption</h3>
-              <h5>class="light grey-text text-lighten-3"Here's our small slogan.</h5>
+              <h2>Right Aligned Caption</h2>
+              <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex optio et molestiae, praesentium cupiditate accusamus odit, velit odio beatae perspiciatis quo architecto ea quasi placeat vel eius consequuntur blanditiis. Asperiores.</h4>
             </div>
           </li>
         </ul>
       </div>
-      <div class="brand"></div>
+      <div data-flickity="{ &quot;groupCells&quot;: true }" class="carousel">
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+      </div>
     </main>
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/flickity/flickityJS/flickity.min.js"></script>
+    <script type="text/javascript" src="libs/flickity/flickityJS/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
   </body>
