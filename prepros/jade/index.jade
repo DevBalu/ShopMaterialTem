@@ -3,9 +3,24 @@ html(lang="en")
 	head
 		include components/head.jade
 	body
+		//- main container
 		main
+			//- navbar container
 			.container
 				include components/menu.jade
+			//- slideshowNav				
 			include components/slideshow.jade
+			//- brands bar
 			include components/brands.jade
+			//- menu Two
+			.menuTwo
+				.container
+					include components/menuTwo.jade
+			//- categori mini section
+			.categori_min_sec.container
+
+
+			//- footer
+			include components/footer.jade
+		//- Libs
 		include components/libs.jade

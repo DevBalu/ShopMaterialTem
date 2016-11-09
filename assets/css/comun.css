@@ -38,4 +38,15 @@ nav ul a {
   font-weight: 700;
   color: #000;
 }
+.menuTwo {
+  background: #ccc;
+}
+.menuTwo nav {
+  background: #ccc;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+}
+.menuTwo nav a {
+  color: #000;
+}
 /*----------------Individual properties-----------------------------------*/
