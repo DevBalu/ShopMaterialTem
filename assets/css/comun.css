@@ -26,8 +26,8 @@ a {
   align-items: center;
 }
 nav {
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0.12);
 }
 nav a {
   font-weight: 100;
@@ -38,13 +38,9 @@ nav ul a {
   font-weight: 700;
   color: #000;
 }
-.menuTwo {
-  background: #ccc;
-}
 .menuTwo nav {
-  background: #ccc;
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16), 0 2px 0px 0 rgba(0,0,0,0.12);
+  -webkit-box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.14), -5px -5px 4px 0 rgba(0,0,0,0.12), 0px 5px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.14), -5px -5px 4px 0 rgba(0,0,0,0.12), 0px 5px 5px 0px rgba(0,0,0,0.2);
 }
 .menuTwo nav a {
   color: #000;
