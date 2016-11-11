@@ -3405,7 +3405,7 @@ input[type=range] + .thumb {
 .row .col {
   float: left;
   box-sizing: border-box;
-  padding: 0 0.75rem;
+  padding: 0 0.2rem; /*custom AG*/
   min-height: 1px;
 }
 
@@ -4009,7 +4009,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #FFF;
+  /*background-color: #FFF;*/
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4066,6 +4066,7 @@ nav .brand-logo {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  padding-left: 10px;
   white-space: nowrap;
 }
 
@@ -5165,8 +5166,8 @@ button.btn-floating {
   background-color: #fff;
   margin: 0;
   display: none;
-  min-width: 130px;
-  max-height: 650px;
+  min-width: 130px;/* custom AG */
+  max-height: 650px;/* custom AG */
   overflow-y: auto;
   opacity: 0;
   position: absolute;
@@ -5439,21 +5440,24 @@ button.btn-floating {
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  margin: 0.5rem 0 1rem 0;
+  /* width: 200px; */ /*custom AG*/
+  /*margin: 0.5rem 0 1rem 0;*/
 }
 
 .collapsible-header {
   display: block;
   cursor: pointer;
-  min-height: 3rem;
+  min-height: 13rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #fff;
+  background-color: rgba(214, 128, 182, .099);
+  /*background: linear-gradient(45deg, #c49db9 1%,#d680b6 18%,#d87dba 38%,#aa2f87 100%);*/
+  /*background: linear-gradient(45deg, rgba(234,201,230,1) 0%,rgba(181,159,178,1) 37%,rgba(197,200,201,1) 100%);*/
   border-bottom: 1px solid #ddd;
 }
 
 .collapsible-header i {
-  width: 2rem;
+  width: 100%;
   font-size: 1.6rem;
   line-height: 3rem;
   display: block;
