@@ -6,19 +6,30 @@ html(lang="en")
 		//- main container
 		main
 			//- navbar container
-			.container
-				include components/menu.jade
-			//- slideshowNav				
-			include components/slideshow.jade
-			//- brands bar
-			include components/brands.jade
-			//- menu Two
-			.menuTwo
-				.container 
-					include components/menuTwo.jade
-			//- section  mini categori
-			include components/section-categorys.jade
+			.oneSection
+				.container
+					include components/menu.jade
+				//- slideshowNav				
+				include components/one_section_slideshow.jade
+				//- brands bar
+				.brands
+					include components/brands.jade
+			.twoSection
+				//- menu Two
+				.menuTwo
+					.container 
+						include components/menu.jade
+				//- section  mini categori
+				include components/section_categorys.jade
+			.threeSection
+				.menuThree
+					.container 
+						include components/menu.jade
+				.topProduct
+					include components/card.jade
+					//- include components/slides_rate_product.jade
 			//- footer
-			include components/footer.jade
+			.footer
+				include components/footer.jade
 		//- Libs
 		include components/libs.jade

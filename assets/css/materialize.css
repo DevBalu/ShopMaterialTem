@@ -4480,7 +4480,7 @@ small {
 
 .card {
   position: relative;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0; /*Custom Ag*/
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px;
@@ -4530,6 +4530,8 @@ small {
 
 .card.large {
   height: 500px;
+  max-width: 600px; /*Custom AG*/
+  margin: 0;
 }
 
 .card.horizontal {
@@ -5445,17 +5447,23 @@ button.btn-floating {
 }
 
 .collapsible-header {
+  background-image: url();
   display: block;
   cursor: pointer;
   min-height: 13rem;
   line-height: 3rem;
-  padding: 0 1rem;
+  /*padding: 0 1rem;*/
   background-color: rgba(214, 128, 182, .099);
-  /*background: linear-gradient(45deg, #c49db9 1%,#d680b6 18%,#d87dba 38%,#aa2f87 100%);*/
-  /*background: linear-gradient(45deg, rgba(234,201,230,1) 0%,rgba(181,159,178,1) 37%,rgba(197,200,201,1) 100%);*/
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;*/ /* Custom AG */
+  position: relative;
 }
 
+.collapsible-header img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+}
 .collapsible-header i {
   width: 100%;
   font-size: 1.6rem;
