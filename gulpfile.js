@@ -5,6 +5,8 @@ var gulp 			= require('gulp'),
     uglify			= require('gulp-uglifyjs'),
     jade 			= require('gulp-jade'),
     stylus 			= require('gulp-stylus');
+    notify 			= require('gulp-notify');
+	// plumber         = require('gulp-plumber');
 
 gulp.task('jade', function(){
 	return gulp.src(['prepros/jade/**/*.jade', '!prepros/jade/index.jade', '!prepros/jade/components/*.jade'])
@@ -13,6 +15,7 @@ gulp.task('jade', function(){
 	}).on('error', function (error) {
             console.error('' + error);
         }))
+	.pipe(notify("Hello Gulp!"))
 	.pipe(gulp.dest('assets/html'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -24,6 +27,7 @@ gulp.task('jadeIndex', function(){
 		}).on('error', function (error) {
             console.error('' + error);
         }))
+	.pipe(notify("Hello Gulp!"))
 	.pipe(gulp.dest('assets'))
     .pipe(browserSync.reload({stream: true}))
 });

@@ -14,8 +14,10 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.3.2",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "plumber": "^0.4.8"
   },
   "dependencies": {
     "autoprefixer": "^6.5.0",

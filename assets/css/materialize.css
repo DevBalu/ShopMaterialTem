@@ -2578,7 +2578,7 @@ a {
   box-shadow: none !important;
 }
 
-.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -3405,7 +3405,7 @@ input[type=range] + .thumb {
 .row .col {
   float: left;
   box-sizing: border-box;
-  padding: 0 0.2rem; /*custom AG*/
+  padding: 0 0.75rem;
   min-height: 1px;
 }
 
@@ -4009,7 +4009,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  /*background-color: #FFF;*/
+  background-color: #ee6e73;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4062,11 +4062,10 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
-  color: #c9c9c9;
+  color: #fff;
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
-  padding-left: 10px;
   white-space: nowrap;
 }
 
@@ -4480,7 +4479,7 @@ small {
 
 .card {
   position: relative;
-  margin: 0; /*Custom Ag*/
+  margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px;
@@ -4530,8 +4529,6 @@ small {
 
 .card.large {
   height: 500px;
-  max-width: 600px; /*Custom AG*/
-  margin: 0;
 }
 
 .card.horizontal {
@@ -5168,8 +5165,8 @@ button.btn-floating {
   background-color: #fff;
   margin: 0;
   display: none;
-  min-width: 130px;/* custom AG */
-  max-height: 650px;/* custom AG */
+  min-width: 100px;
+  max-height: 650px;
   overflow-y: auto;
   opacity: 0;
   position: absolute;
@@ -5442,30 +5439,21 @@ button.btn-floating {
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  /* width: 200px; */ /*custom AG*/
-  /*margin: 0.5rem 0 1rem 0;*/
+  margin: 0.5rem 0 1rem 0;
 }
 
 .collapsible-header {
-  background-image: url();
   display: block;
   cursor: pointer;
-  min-height: 14rem;
+  min-height: 3rem;
   line-height: 3rem;
-  /*padding: 0 1rem;*/
-  background-color: rgba(214, 128, 182, .099);
-  /*border-bottom: 1px solid #ddd;*/ /* Custom AG */
-  position: relative;
+  padding: 0 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-.collapsible-header img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: .3;
-}
 .collapsible-header i {
-  width: 100%;
+  width: 2rem;
   font-size: 1.6rem;
   line-height: 3rem;
   display: block;
@@ -7659,13 +7647,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .slides {
-  /*background-color: #9e9e9e;*/
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c49db9+1,d680b6+18,d87dba+38,aa2f87+100 */
-  background: #c49db9; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #c49db9 1%, #d680b6 18%, #d87dba 38%, #aa2f87 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #c49db9 1%,#d680b6 18%,#d87dba 38%,#aa2f87 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #c49db9 1%,#d680b6 18%,#d87dba 38%,#aa2f87 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c49db9', endColorstr='#aa2f87',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #9e9e9e;
   margin: 0;
   height: 400px;
 }
@@ -7692,8 +7674,8 @@ input[type=range]:focus::-ms-fill-upper {
   color: #fff;
   position: absolute;
   top: 15%;
-  left: 45%;
-  width: 50%;
+  left: 15%;
+  width: 70%;
   opacity: 0;
 }
 
