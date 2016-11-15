@@ -25,6 +25,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
+/*Menu*/
 nav {
   background-color: #fff;
   -webkit-box-shadow: none;
@@ -41,18 +42,73 @@ ul.right i {
 ul#nav-mobile a {
   color: #000;
 }
-ul#dropdown1.dropdown-content {
+ul.drop {
   margin-top: 55px !important;
   min-width: 130px !important;
 }
-ul#dropdown1.dropdown-content li a {
+ul.drop li a {
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 700;
   color: #000;
 }
+.twoMenu {
+  border-bottom: 1px solid #ccc;
+}
+.threeMenu {
+  border-top: 1px solid #ccc;
+}
+/*END Menu*/
+/*--------------------One Section--------------------------*/
+/*Slideshow one section*/
 .caption {
   left: 42% !important;
   width: 50% !important;
 }
-/*----------------Individual properties-----------------------------------*/
+/*END Slideshow one section*/
+/*Brand slideshow one section*/
+.carousel {
+  background: #eee;
+  height: 160px !important;
+}
+.carousel-cell {
+  width: 28%;
+  height: 160px !important;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.wrapimg {
+  width: 300px;
+  height: 160px;
+}
+.carousel-cell-image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+/*END Brand slideshow one section*/
+/*--------------------Two Section--------------------------*/
+/*Mini Categorys two section*/
+.collapsible-header {
+  padding: 0;
+  width: 100%;
+}
+.collapsible-header img {
+  width: 100%;
+  opacity: 0.8;
+}
+/*END Mini Categorys two section*/
+/*--------------------Three Section--------------------------*/
+.topProduct {
+  background: #ccc;
+  min-height: 800px;
+}

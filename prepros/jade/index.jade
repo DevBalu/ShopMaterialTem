@@ -5,13 +5,33 @@ html(lang="en")
 	body
 		//- main container
 		main
-			//- navbar container
+			//-ONE SECTION
 			.oneSection
+				//- menu one section
 				.container
+					//-menu
 					include components/menu.jade
-				//- slideshowNav				
-				include components/osslideshow.jade
-				//- brands bar
+				//- slideshow one section 				
+				include components/os_slideshow.jade
+				//- brands slideshow one section 
 				.brands
-					include components/brands.jade
+					include components/os_brands_slideshow.jade
+			//-TWO SECTION
+			.twoSection
+				//-two menu two section
+				.twoMenu
+					.container
+						include components/menu.jade		
+				//- mini categories two section
+				include components/twosec_mini_categories.jade
+			//-THREE SECTION
+			.threeSection
+				//-three menu three section
+				.threeMenu
+					.container
+						include components/menu.jade
+				//-top product three menu
+				.topProduct
+					include components/cardTP.jade
+
 		include components/libs.jade
