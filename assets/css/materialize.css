@@ -5450,7 +5450,7 @@ button.btn-floating {
   background-image: url();
   display: block;
   cursor: pointer;
-  min-height: 13rem;
+  min-height: 14rem;
   line-height: 3rem;
   /*padding: 0 1rem;*/
   background-color: rgba(214, 128, 182, .099);

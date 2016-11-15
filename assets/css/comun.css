@@ -94,3 +94,16 @@ nav ul a {
 .threeSection .slider .slides {
   background: none;
 }
+/*----------------------------Footer----------------------*/
+.footer-copyright {
+  background: #000;
+  max-height: 50px;
+  padding-top: calc(17px / 2);
+}
+.footer-copyright p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 100;
+  margin: 0;
+}
+/*-----------------*/
