@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="libs/flickity/flickity.min.css">
     <link rel="stylesheet" href="css/comun.css">
   </head>
@@ -60,7 +60,7 @@
           </ul>
         </div>
         <div class="brands">
-          <div data-flickity="{ &quot;groupCells&quot;: true}" class="carousel">
+          <div data-flickity="{ &quot;groupCells&quot;: true, &quot;autoPlay&quot;: true}" class="carousel">
             <div class="carousel-cell">
               <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
             </div>
@@ -112,7 +112,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col s12 m4 l3">
+            <div class="col s12 m6 l3">
               <ul data-collapsible="accordion" class="collapsible popout">
                 <li>
                   <div class="collapsible-header"><img src="img/sort/minCat1.jpg"></div>
@@ -146,7 +146,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col s12 m4 l3">
+            <div class="col s12 m6 l3">
               <ul data-collapsible="accordion" class="collapsible popout">
                 <li>
                   <div class="collapsible-header"><img src="img/sort/minCat4.jpg"></div>
@@ -180,7 +180,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col s12 m4 l3">
+            <div class="col s12 m6 l3">
               <ul data-collapsible="accordion" class="collapsible popout">
                 <li>
                   <div class="collapsible-header"><img src="img/sort/minCat8.jpg"></div>
@@ -214,7 +214,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col s12 m4 l3">
+            <div class="col s12 m6 l3">
               <ul data-collapsible="accordion" class="collapsible popout">
                 <li>
                   <div class="collapsible-header"><img src="img/sort/minCat12.jpg"></div>
@@ -276,16 +276,96 @@
         <div class="topProduct">
           <div class="container">
             <div class="row">
-              <div class="col s12 m6 offset-m6">
+              <div class="col s12 m8 l8 offset-l4">
                 <div class="card horizontal">
                   <div class="card-image"><img src="img/office.jpg" class="activator"></div>
                   <div class="card-stacked">
                     <div class="card-content">
-                      <p>am a very simple card. I am good at containing small bits of information.</p>
+                      <h4>Title</h4>
+                      <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                      <h5>Price</h5><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i>
                     </div>
-                    <div class="card-action"><a href="#">This is a link</a></div>
+                    <div class="card-action"><a href="#">ADD TO CART</a></div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="tpSlideshow">
+            <div data-flickity="{ &quot;groupCells&quot;: true, &quot;autoPlay&quot;: false}" class="carousel">
+              <div class="carousel-cell">
+                <div class="wrapimg">
+                  <div class="row">
+                    <div>
+                      <div class="card horizontal">
+                        <div class="card-image"><img src="img/office.jpg" class="activator"></div>
+                        <div class="card-stacked">
+                          <div class="card-content">
+                            <h4>Title</h4>
+                            <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <h5>Price</h5><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i>
+                          </div>
+                          <div class="card-action"><a href="#">ADD TO CART</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+              <div class="carousel-cell">
+                <div class="wrapimg"><img src="img/x.jpeg" class="carousel-cell-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="page-footer grey">
+            <div class="container">
+              <div class="row">
+                <div class="col l3 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque soluta numquam, quis perspiciatis ea ad omnis provident laborum dolore in atque ut doloribus quo, ratione fuga amet ab, vel nobis?</p>
+                </div>
+                <div class="col l3 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus alias hic soluta odio reiciendis similique delectus eos quaerat tempore facilis. Aliquid esse quaerat illum atque ea dolor voluptatum quod ratione!</p>
+                </div>
+                <div class="col l3 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, aliquid numquam dolorum vitae culpa similique qui hic adipisci quia magni? Aliquam accusamus soluta, veritatis aliquid debitis dolores quis facilis nemo.</p>
+                </div>
+                <div class="col l3 s12">
+                  <ul class="right">
+                    <h5 class="white-text right">Links</h5>
+                    <li><a href="#!" class="grey-text text-lighten-3">Link 1</a></li>
+                    <li><a href="#!" class="grey-text text-lighten-3">Link 1</a></li>
+                    <li><a href="#!" class="grey-text text-lighten-3">Link 1</a></li>
+                    <li><a href="#!" class="grey-text text-lighten-4 right">More Links</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+                <p>|© Powered by Andrei Ghenov (DevBalu)</p>
               </div>
             </div>
           </div>
