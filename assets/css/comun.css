@@ -111,6 +111,7 @@ ul.drop li a {
 /*END Mini Categorys*/
 /*--------------------Three Section--------------------------*/
 .topProduct {
+  padding-bottom: 20px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(1%, #c49db9), color-stop(18%, #d680b6), color-stop(38%, #d87dba), to(#aa2f87));
   background: linear-gradient(to top right, #c49db9 1%, #d680b6 18%, #d87dba 38%, #aa2f87 100%);
 }
@@ -149,16 +150,20 @@ ul.drop li a {
 }
 /*END card Top Product*/
 /*card top product mini*/
-.carousel {
+@media screen and (max-width: 600px) {
+  .tpSlideshow .carousel {
+    height: 100px !important;
+  }
+  .tpSlideshow .carousel-cell {
+    width: 50%;
+    margin-right: 2px;
+  }
+}
+.tpSlideshow .carousel {
   background: rgba(255,255,255,0.001);
   height: 240px !important;
 }
-@media screen and (max-width: 600px) {
-  .carousel {
-    height: 100px !important;
-  }
-}
-.carousel-cell {
+.tpSlideshow .carousel-cell {
   width: 28%;
   margin-right: 10px;
   height: 100% !important;
@@ -168,24 +173,50 @@ ul.drop li a {
   margin: 0;
 }
 .topProduct .tpSlideshow .row .card {
+  background-color: rgba(255,255,255,0.4);
   margin: 0;
 }
 .topProduct .tpSlideshow .row .card .card-image {
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-.topProduct .tpSlideshow .row .card .card-stacked .card-content h4 {
-  margin: 0;
+.topProduct .tpSlideshow .row .card .card-image .wrapimg {
+  width: 100%;
+}
+.topProduct .tpSlideshow .row .card .card-content a {
+  color: #000;
+}
+.topProduct .tpSlideshow .row .card .card-content .card-action {
+  color: #fff;
+  padding: 5px;
+}
+.topProduct .tpSlideshow .row .card .card-reveal {
+  padding: 7px;
+}
+.topProduct .tpSlideshow .row .card .card-reveal p {
+  margin: 2px 0;
+}
+.topProduct .tpSlideshow .row .card .card-reveal h4 {
+  margin: 2px 0;
+  padding: 2px 0;
   font-size: 20px;
 }
-.topProduct .tpSlideshow .row .card .card-stacked .card-content h5 {
+.topProduct .tpSlideshow .row .card .card-reveal h5 {
+  margin: 2px 0;
+  padding: 2px 0;
   font-size: 20px;
 }
-.topProduct .tpSlideshow .row .card .card-stacked .card-content i {
+.topProduct .tpSlideshow .row .card .card-reveal i {
+  margin: 2px 0;
+  padding: 2px 0;
   font-size: 20px;
 }
 @media screen and (max-width: 600px) {
@@ -203,18 +234,27 @@ ul.drop li a {
     -ms-flex-align: center;
     align-items: center;
   }
-  .topProduct .tpSlideshow .row .card .card-stacked .card-content h4 {
+  .topProduct .tpSlideshow .row .card .card-image .wrapimg {
+    width: 100%;
+  }
+  .topProduct .tpSlideshow .row .card .card-content {
+    padding: 5px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h4 {
+    color: #000;
     margin: 0;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 400;
   }
-  .topProduct .tpSlideshow .row .card .card-stacked .card-content h5 {
+  .topProduct .tpSlideshow .row .card .card-content h5 {
     font-size: 10px;
+    margin: 2px;
   }
-  .topProduct .tpSlideshow .row .card .card-stacked .card-content i {
-    font-size: 10px;
+  .topProduct .tpSlideshow .row .card .card-content i {
+    font-size: 7px;
   }
-  .topProduct .tpSlideshow .row .card .card-stacked .card-content p {
-    font-size: 10px;
+  .topProduct .tpSlideshow .row .card .card-content p {
+    font-size: 7px;
   }
 }
 /*END card top product mini*/

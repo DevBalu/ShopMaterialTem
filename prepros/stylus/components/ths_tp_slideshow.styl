@@ -1,14 +1,18 @@
 /*slideshow top product*/
-.carousel
-    background rgba(255, 255, 255, .001)
-    height 240px !important
-@media screen and (max-width:600px)
+.tpSlideshow
+	@media screen and (max-width:600px)
+		.carousel
+			height 100px !important
+		.carousel-cell
+			width 50%
+			margin-right 2px
 	.carousel
-	    height 100px !important	
-.carousel-cell
-	width 28%
-	margin-right 10px
-	height 100% !important
-	border-radius 5px
-/*End slideshow top product*/
+		background rgba(255, 255, 255, .001)
+		height 240px !important
+	.carousel-cell
+		width 28%
+		margin-right 10px
+		height 100% !important
+		border-radius 5px
 @import 'components/cardTP_mini.styl'
+	/*End slideshow top product*/

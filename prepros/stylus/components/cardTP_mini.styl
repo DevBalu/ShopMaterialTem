@@ -1,21 +1,42 @@
+/*card Desktop parametres three section*/
 .topProduct
 	.tpSlideshow
 		.row
 			margin 0
 			.card
+				background-color rgba(255, 255, 255, .4	)
 				margin 0
 				.card-image
+					height 200px
 					display flex
 					align-items center
-				.card-stacked
-					.card-content
-						h4
-							margin 0
-							font-size 20px
-						h5
-							font-size 20px
-						i
-							font-size 20px
+					justify-content center
+					.wrapimg
+						width 100%
+				.card-content
+					a
+						color #000
+					.card-action
+						color #fff
+						padding 5px
+				.card-reveal
+					padding 7px
+					p
+						margin 2px 0
+					h4
+						margin 2px 0
+						padding 2px 0
+						font-size 20px
+					h5
+						margin 2px 0
+						padding 2px 0
+						font-size 20px
+					i
+						margin 2px 0
+						padding 2px 0
+						font-size 20px
+/*END card Desktop parametres three section*/
+/*card MOBILE parametres three section*/
 @media screen and (max-width 600px)
 	.topProduct
 		.tpSlideshow
@@ -26,15 +47,19 @@
 					.card-image
 						display flex
 						align-items center
-					.card-stacked
-						.card-content
-							h4
-								margin 0
-								font-size 10px
-							h5
-								font-size 10px
-							i
-								font-size 10px
-							p
-								font-size 10px
-								
+						.wrapimg
+							width 100%
+					.card-content
+						padding 5px
+						h4
+							color #000
+							margin 0
+							font-size 14px
+							font-weight 400
+						h5
+							font-size 10px
+							margin 2px
+						i
+							font-size 7px
+						p
+							font-size 7px
