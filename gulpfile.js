@@ -16,7 +16,7 @@ gulp.task('jade', function(){
             console.error('' + error);
         }))
 	.pipe(notify("Hello Gulp!"))
-	.pipe(gulp.dest('assets/html'))
+	.pipe(gulp.dest('assets'))
     .pipe(browserSync.reload({stream: true}))
 });
 
