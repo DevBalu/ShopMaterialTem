@@ -14,17 +14,7 @@ h6 {
 a {
   text-decoration: none;
 }
-.centering {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+/*-----------------------------------------------------------------MAIN PAGE HTML----------------*/
 /*Menu*/
 nav {
   background-color: #fff;
@@ -56,7 +46,7 @@ ul.drop li a {
   border-bottom: 1px solid #ccc;
 }
 .threeMenu {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(216,125,186,0.44);
 }
 /*END Menu*/
 /*--------------------One Section--------------------------*/
@@ -109,7 +99,7 @@ ul.drop li a {
   opacity: 0.8;
 }
 /*END Mini Categorys*/
-/*--------------------Three Section--------------------------*/
+/*--------------------Three Section------------------------*/
 .topProduct {
   padding-bottom: 20px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(1%, #c49db9), color-stop(18%, #d680b6), color-stop(38%, #d87dba), to(#aa2f87));
@@ -258,3 +248,25 @@ ul.drop li a {
   }
 }
 /*END card top product mini*/
+/*-----------------------------------------------------------------CATALOG PAGE HTML----------------*/
+/*-------------------Catalog One Section-------------------*/
+/*filter*/
+.catalogOS .collapsible-header {
+  display: block;
+  cursor: pointer;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.catalogOS .collapsible-body {
+  overflow: hidden;
+  display: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*END filter*/
+/*filter content*/
+/*END filter content*/

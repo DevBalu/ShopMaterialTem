@@ -5,12 +5,18 @@ html(lang="en")
 	body
 		//- main container
 		main
-			//-ONE SECTION
-			.oneSection
-				//- menu one section
+			//-catalog ONE SECTION
+			.catalogOS
+				//- menu
 				.container
-					//-menu
 					include components/menu.jade
+				//-filter content
+				.container
+					.row
+						//- filter
+						include components/filter.jade
+						//- filter content
+						include components/filterContent.jade
 			.footer
 				include components/footer.jade
 
