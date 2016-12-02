@@ -21,7 +21,7 @@ gulp.task('jade', function(){
 });
 
 gulp.task('jadeIndex', function(){
-	return gulp.src('prepros/jade/index.jade')
+	return gulp.src('prepros/jade/*.jade')
 	.pipe(jade({
         pretty: true
 		}).on('error', function (error) {

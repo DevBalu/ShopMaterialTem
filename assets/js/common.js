@@ -8,15 +8,25 @@
     $(dropactive[i]).attr("data-activates", "dropdown" + i);
   }
 })();
+/*set attribute FILTER*/
+(function() {
+  var ff = $(".field-filter");
+  var lff = $(".lable-field-filter");
+
+  for (var i = 0; i < ff.length; i++) {
+    $(ff[i]).attr("id", "test" + i);
+    $(lff[i]).attr("for", "test" + i);
+  }
+})();
 
 $(document).ready(function(){
-  /*SlideshowNav*/
+/*SlideshowNav*/
   $('.slider').slider({
     full_width: true,
     height: 800,
     indicators: false
   });
-  /*Navbar*/
+/*Navbar*/
   $('.dropdown-button').dropdown({
       inDuration: 3,
       outDuration: 225,
@@ -27,7 +37,8 @@ $(document).ready(function(){
       alignment: 'right' // Displays dropdown with edge aligned to the left of button
     }
   );
-   /*Visualization Categori Content*/  
+ /*END navbar*/
+ /*Visualization Categori Content*/  
   $('.collapsible').collapsible({
       accordion: false, // A setting that changes the collapsible behavior to expandable instead of the default accordion style
       onOpen: function(el) { alert('Open'); }, // Callback for Collapsible open
@@ -38,5 +49,7 @@ $(document).ready(function(){
   $('.parallax').parallax();
   /**/
   $('.materialboxed').materialbox();
-  
+/*END Visualization Categori Content*/
+/*---------------------------------Price input RANGE*/
+/*--------------------------------END Price input RANGE*/
 });   

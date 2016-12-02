@@ -48,6 +48,9 @@ ul.drop li a {
 .threeMenu {
   border-top: 1px solid rgba(216,125,186,0.44);
 }
+.menuCatalog {
+  border-bottom: 1px solid #ccc;
+}
 /*END Menu*/
 /*--------------------One Section--------------------------*/
 /*Slideshow*/
@@ -140,6 +143,13 @@ ul.drop li a {
 }
 /*END card Top Product*/
 /*card top product mini*/
+.tpSlideshow {
+  background: rgba(69,28,55,0.49);
+}
+.tpSlideshow h3 {
+  padding-top: 20px;
+  color: #fff;
+}
 @media screen and (max-width: 600px) {
   .tpSlideshow .carousel {
     height: 100px !important;
@@ -151,13 +161,16 @@ ul.drop li a {
 }
 .tpSlideshow .carousel {
   background: rgba(255,255,255,0.001);
-  height: 240px !important;
+  height: 300px !important;
 }
 .tpSlideshow .carousel-cell {
   width: 28%;
   margin-right: 10px;
   height: 100% !important;
   border-radius: 5px;
+}
+.topProduct i {
+  color: #fa6;
 }
 .topProduct .tpSlideshow .row {
   margin: 0;
@@ -194,6 +207,11 @@ ul.drop li a {
 .topProduct .tpSlideshow .row .card .card-reveal p {
   margin: 2px 0;
 }
+.topProduct .tpSlideshow .row .card .card-reveal h3 {
+  margin: 2px 0;
+  color: #ccc;
+  padding: 2px 0;
+}
 .topProduct .tpSlideshow .row .card .card-reveal h4 {
   margin: 2px 0;
   padding: 2px 0;
@@ -208,6 +226,10 @@ ul.drop li a {
   margin: 2px 0;
   padding: 2px 0;
   font-size: 20px;
+  color: #fa6;
+}
+.star {
+  color: #fc6;
 }
 @media screen and (max-width: 600px) {
   .topProduct .tpSlideshow .row {
@@ -230,6 +252,14 @@ ul.drop li a {
   .topProduct .tpSlideshow .row .card .card-content {
     padding: 5px;
   }
+  .topProduct .tpSlideshow .row .card .card-content h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h3 {
+    margin: 0;
+    font-size: 14px;
+  }
   .topProduct .tpSlideshow .row .card .card-content h4 {
     color: #000;
     margin: 0;
@@ -246,6 +276,106 @@ ul.drop li a {
   .topProduct .tpSlideshow .row .card .card-content p {
     font-size: 7px;
   }
+  .topProduct .tpSlideshow .row .card .card-reveal {
+    padding: 5px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h4 {
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h5 {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal i {
+    font-size: 7px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal p {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topProduct .tpSlideshow .row {
+    margin: 0;
+  }
+  .topProduct .tpSlideshow .row .card {
+    margin: 0;
+  }
+  .topProduct .tpSlideshow .row .card .card-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .topProduct .tpSlideshow .row .card .card-image .wrapimg {
+    width: 100%;
+  }
+  .topProduct .tpSlideshow .row .card .card-content {
+    padding: 5px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h4 {
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .topProduct .tpSlideshow .row .card .card-content h5 {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content i {
+    font-size: 7px;
+  }
+  .topProduct .tpSlideshow .row .card .card-content p {
+    font-size: 7px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal {
+    padding: 5px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h4 {
+    color: #000;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal h5 {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal i {
+    font-size: 7px;
+  }
+  .topProduct .tpSlideshow .row .card .card-reveal p {
+    font-size: 12px;
+  }
 }
 /*END card top product mini*/
 /*-----------------------------------------------------------------CATALOG PAGE HTML----------------*/
@@ -257,8 +387,11 @@ ul.drop li a {
   height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #fff;
+  background-color: #eee;
   border-bottom: 1px solid #ddd;
+}
+.catalogOS .collapsible-header p {
+  margin: 0;
 }
 .catalogOS .collapsible-body {
   overflow: hidden;
@@ -266,7 +399,46 @@ ul.drop li a {
   border-bottom: 1px solid #ddd;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 20px 0;
+}
+.catalogOS .collapsible-body .range-field {
+  padding: 0;
+}
+.catalogOS .collapsible-body a {
+  cursor: pointer;
+}
+.btn {
+  padding: 0;
+  width: 100%;
 }
 /*END filter*/
 /*filter content*/
+.filterContent {
+  float: left;
+}
+.filterContent .row {
+  margin: 0;
+  list-style-type: none;
+  display: block;
+  float: left;
+}
+.filterContent .row div {
+  float: left;
+}
+.filterContent .row div .card-action {
+i
+  font-size: 25px;
+  color: #fc6;
+}
+.filterContent .row div .card-action .price {
+  color: #2196f3;
+  position: relative;
+  text-align: right;
+}
+.filterContent .row div .card-action .price .savemoney {
+  position: absolute;
+  color: #bdbdbd;
+  right: 10px;
+  top: -20px;
+}
 /*END filter content*/
