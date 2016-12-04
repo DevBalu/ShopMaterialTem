@@ -3,22 +3,27 @@ html(lang="en")
 	head
 		include components/head.jade
 	body
-		//- main container
+		//main container
 		main
-			//-catalog ONE SECTION
+			//catalog
 			.catalogOS
-				//- menu
+				//menu
 				.menuCatalog
 					.container
 						include components/menu.jade
-				//-filter
+				//END menu
+				//filter
 				.container
 					.row
 						include components/filter.jade
 						//- filter content
 						include components/filterContent.jade
+				//END filter
+			//END catalog
+			//footer
 			.footer
 				include components/footer.jade
-
-
+			//END footer
+		//library
 		include components/libs.jade
+		//END library

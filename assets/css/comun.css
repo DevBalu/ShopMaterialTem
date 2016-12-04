@@ -24,7 +24,7 @@ nav {
 }
 a.brand-logo {
   color: #000;
-  font-weight: 100;
+  font-weight: 200;
 }
 ul.right i {
   color: #000;
@@ -43,7 +43,7 @@ ul.drop li a {
   color: #000;
 }
 .twoMenu {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 .threeMenu {
   border-top: 1px solid rgba(216,125,186,0.44);
@@ -54,7 +54,11 @@ ul.drop li a {
 /*END Menu*/
 /*Footer*/
 .grey {
-  background-color: #645151 !important;
+  color: rgba(179,142,142,0.87) !important;
+  background-color: #786f6f !important;
+}
+.footer-copyright {
+  background: rgba(0,0,0,0.54);
 }
 /*END Footer*/
 /*--------------------One Section--------------------------*/
@@ -98,13 +102,23 @@ ul.drop li a {
 /*END Brand slideshow*/
 /*--------------------Two Section--------------------------*/
 /*Mini Categorys*/
-.collapsible-header {
+.twosec_mini_categories .collapsible-header {
   padding: 0;
   width: 100%;
+  position: relative;
 }
-.collapsible-header img {
+.twosec_mini_categories .collapsible-header .textatimg {
+  position: absolute;
   width: 100%;
-  opacity: 0.8;
+  top: 30%;
+}
+.twosec_mini_categories .collapsible-header .textatimg p {
+  font-size: 25px;
+  font-weight: 300;
+}
+.twosec_mini_categories .collapsible-header img {
+  width: 100%;
+  opacity: 0.3;
 }
 /*END Mini Categorys*/
 /*--------------------Three Section------------------------*/
@@ -125,11 +139,28 @@ ul.drop li a {
   -ms-flex-align: center;
   align-items: center;
 }
+.topProduct .container .row .card .card-image img {
+  max-width: none;
+  width: 100%;
+}
+.topProduct .container .row .card .card-stacked {
+  border-left: 1px solid #ccc;
+}
 .topProduct .container .row .card .card-stacked .card-content {
   padding: 0 2px 2px 10px;
 }
+.topProduct .container .row .card .card-stacked .card-content h4 {
+  font-weight: 200;
+}
+.topProduct .container .row .card .card-stacked .card-content h5 {
+  font-weight: 300;
+}
+.topProduct .container .row .card .card-stacked .card-content p {
+  font-size: 20px;
+}
 .topProduct .container .row .card .card-stacked .card-action {
   padding: 10px;
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
   .topProduct .container .row {
@@ -198,8 +229,12 @@ ul.drop li a {
 .topProduct .tpSlideshow .row .card .card-image .wrapimg {
   width: 100%;
 }
+.topProduct .tpSlideshow .row .card .card-content {
+  padding: 10px;
+}
 .topProduct .tpSlideshow .row .card .card-content a {
   color: #000;
+  font-size: 20px;
 }
 .topProduct .tpSlideshow .row .card .card-content .card-action {
   color: #fff;
@@ -213,23 +248,27 @@ ul.drop li a {
 }
 .topProduct .tpSlideshow .row .card .card-reveal h3 {
   margin: 2px 0;
-  color: #ccc;
   padding: 2px 0;
+  color: #000;
 }
 .topProduct .tpSlideshow .row .card .card-reveal h4 {
+  font-size: 20px;
+  font-weight: 300;
   margin: 2px 0;
   padding: 2px 0;
-  font-size: 20px;
+  color: #000;
 }
 .topProduct .tpSlideshow .row .card .card-reveal h5 {
+  font-size: 20px;
+  font-weight: 300;
   margin: 2px 0;
   padding: 2px 0;
-  font-size: 20px;
+  color: #000;
 }
 .topProduct .tpSlideshow .row .card .card-reveal i {
+  font-size: 25px;
   margin: 2px 0;
   padding: 2px 0;
-  font-size: 25px;
   color: #fa6;
 }
 .star {
@@ -385,7 +424,12 @@ ul.drop li a {
 /*-----------------------------------------------------------------CATALOG PAGE HTML----------------*/
 /*-------------------Catalog One Section-------------------*/
 /*filter*/
-.catalogOS .collapsible-header {
+.catalogOS .filter .nav-wrapper .input-field i,
+.catalogOS .filter .nav-wrapper .input-field .is {
+  position: absolute;
+  top: 15%;
+}
+.catalogOS .filter .collapsible .collapsible-header {
   display: block;
   cursor: pointer;
   height: 3rem;
@@ -394,10 +438,10 @@ ul.drop li a {
   background-color: #eee;
   border-bottom: 1px solid #ddd;
 }
-.catalogOS .collapsible-header p {
+.catalogOS .filter .collapsible .collapsible-header p {
   margin: 0;
 }
-.catalogOS .collapsible-body {
+.catalogOS .filter .collapsible .collapsible-body {
   overflow: hidden;
   display: none;
   border-bottom: 1px solid #ddd;
@@ -405,29 +449,25 @@ ul.drop li a {
   box-sizing: border-box;
   padding: 20px 0;
 }
-.catalogOS .collapsible-body .range-field {
+.catalogOS .filter .collapsible .collapsible-body .range-field {
   padding: 0;
 }
-.catalogOS .collapsible-body a {
+.catalogOS .filter .collapsible .collapsible-body a {
   cursor: pointer;
 }
 .btn {
   padding: 0;
   width: 100%;
 }
+.icons {
+  color: #000 !important;
+}
 /*END filter*/
 /*filter content*/
-.filterContent {
-  float: left;
-}
 .filterContent .row {
   margin: 0;
   list-style-type: none;
   display: block;
-  float: left;
-}
-.filterContent .row div {
-  float: left;
 }
 .filterContent .row div .card-action {
 i
@@ -444,5 +484,9 @@ i
   color: #bdbdbd;
   right: 10px;
   top: -20px;
+  text-decoration: line-through;
+}
+.clearfix {
+  clear: none;
 }
 /*END filter content*/

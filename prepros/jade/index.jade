@@ -3,41 +3,46 @@ html(lang="en")
 	head
 		include components/head.jade
 	body
-		//- main container
+		//main container
 		main
-			//-ONE SECTION
+			//ONE SECTION
 			.oneSection
-				//- menu one section
+				//menu one section
 				.container
-					//-menu
+					//menu
 					include components/menu.jade
-				//- slideshow one section
+				//slideshow one section
 				include components/os_slideshow.jade
-				//- brands slideshow one section
+				//brands slideshow one section
 				.brands
 					include components/os_brands_slideshow.jade
-			//-TWO SECTION
+			//TWO SECTION
 			.twoSection
-				//-two menu two section
+				//two menu two section
 				.twoMenu
 					.container
 						include components/menu.jade
-				//- mini categories two section
+				//mini categories two section
 				include components/twosec_mini_categories.jade
-			//-THREE SECTION
+			//THREE SECTION
 			.threeSection
-				//-three menu three section
+				//three menu three section
 				.threeMenu
 					.container
 						include components/menu.jade
-				//-top product three menu
+				//top product three section
 				.topProduct
+					//card top product
 					include components/cardTP.jade
+					//top product slideshow
 					.tpSlideshow
 						h3(class="center") SIMILAR ITEMS
+						//mini card
 						include components/ths_tp_slideshow.jade
+				//footer
 				.footer
 					include components/footer.jade
+				//END footer
 
 
 		include components/libs.jade
