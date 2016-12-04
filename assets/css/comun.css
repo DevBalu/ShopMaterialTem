@@ -52,6 +52,11 @@ ul.drop li a {
   border-bottom: 1px solid #ccc;
 }
 /*END Menu*/
+/*Footer*/
+.grey {
+  background-color: #645151 !important;
+}
+/*END Footer*/
 /*--------------------One Section--------------------------*/
 /*Slideshow*/
 .caption {
@@ -104,7 +109,6 @@ ul.drop li a {
 /*END Mini Categorys*/
 /*--------------------Three Section------------------------*/
 .topProduct {
-  padding-bottom: 20px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(1%, #c49db9), color-stop(18%, #d680b6), color-stop(38%, #d87dba), to(#aa2f87));
   background: linear-gradient(to top right, #c49db9 1%, #d680b6 18%, #d87dba 38%, #aa2f87 100%);
 }
@@ -225,7 +229,7 @@ ul.drop li a {
 .topProduct .tpSlideshow .row .card .card-reveal i {
   margin: 2px 0;
   padding: 2px 0;
-  font-size: 20px;
+  font-size: 25px;
   color: #fa6;
 }
 .star {
