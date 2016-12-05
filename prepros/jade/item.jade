@@ -1,0 +1,60 @@
+doctype
+html(lang="en")
+	head
+		include components/head.jade
+	body
+		//main container
+		main
+			//item
+			.item
+				//menu
+				.menuItem
+					.container
+						include components/menu.jade
+				//END menu
+				//item section
+				.itemSec
+					.container
+							.row
+								div(class="col s12 m12 l12 ")
+									div(class="card horizontal row")
+										div(class="card-image col s12 m6 l6")
+											img(class="materialboxed" src="img/fbpage.jpg")
+										div(class="card-stacked col s12 m6 l6")
+											div(class="card-content")
+												h4 Title
+												p Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.
+												h5 Price: 1000 €
+												i(class="material-icons small") star
+												i(class="material-icons small") star
+												i(class="material-icons small") star
+												i(class="material-icons small") star
+											div(class="card-action right")
+												a(href="#") ADD TO CART
+				//END item section
+				//itemParametres
+				.itemSpecifics
+					.container
+							h4(class="center") ITEM SPECIFICATION
+							.row.specContent
+								div(class="col s12 m6 l6")
+									p Condition: 
+									p Clarity: Clean 
+									p Cut: Clean 
+									p Gem type: Clean 
+									p Color: Red 
+								div(class="col s12 m6 l6")
+									p Brand: Gem Strone King 
+									p Metal: Sterling Silver 
+									p Style: Pendant 
+									p Matal Purity: 924, Sterling
+
+				//END itemParametres
+			//END item
+			//footer
+			#footer
+				include components/footer.jade
+			//END footer
+		//library
+		include components/libs.jade
+		//END library
