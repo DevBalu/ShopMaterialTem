@@ -5,9 +5,12 @@
 		display block
 		div
 			.card-action
+				padding 20px 
+				.col
+					padding 0
 				i
-				font-size 25px
-				color #FC6
+					font-size 22px !important
+					color #FC6
 				.price
 					color #2196f3
 					position relative
@@ -20,3 +23,13 @@
 						text-decoration line-through
 .clearfix
 	clear none
+@media only screen and (max-width 600px)
+	.filterContent
+		.row
+			div
+				.card-action
+					padding 20px 0
+					.col
+						padding 0
+					i
+						font-size 23px !important

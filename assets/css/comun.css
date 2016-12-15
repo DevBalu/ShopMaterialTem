@@ -1,4 +1,4 @@
-/*--------------------General properties-----------------------*/
+--------------------General properties-----------------------*/,
 p {
   font-family: "Roboto";
 }
@@ -14,7 +14,7 @@ h6 {
 a {
   text-decoration: none;
 }
-/*-----------------------------------------------------------------MAIN PAGE HTML----------------*/
+/*-----------------------------------------------------------------INDEX PAGE ----------------*/
 /*Menu*/
 nav {
   background-color: #fff;
@@ -195,6 +195,9 @@ ul.drop li a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .topProduct .container .row .col {
+    padding: 0;
   }
 }
 /*END card Top Product*/
@@ -425,9 +428,9 @@ ul.drop li a {
     font-size: 20px;
   }
   .topProduct .tpSlideshow .row .card .card-reveal h4 {
-    color: #000;
+    color: #ddd;
     margin: 0;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
   }
   .topProduct .tpSlideshow .row .card .card-reveal h5 {
@@ -435,14 +438,14 @@ ul.drop li a {
     margin: 2px;
   }
   .topProduct .tpSlideshow .row .card .card-reveal i {
-    font-size: 7px;
+    font-size: 23px;
   }
   .topProduct .tpSlideshow .row .card .card-reveal p {
     font-size: 12px;
   }
 }
 /*END card top product mini*/
-/*-----------------------------------------------------------------CATALOG PAGE HTML----------------*/
+/*-----------------------------------------------------------------CATALOG PAGE----------------*/
 /*-------------------Catalog One Section-------------------*/
 /*filter*/
 .catalogOS .filter .nav-wrapper .input-field i,
@@ -491,8 +494,13 @@ ul.drop li a {
   display: block;
 }
 .filterContent .row div .card-action {
-i
-  font-size: 25px;
+  padding: 20px;
+}
+.filterContent .row div .card-action .col {
+  padding: 0;
+}
+.filterContent .row div .card-action i {
+  font-size: 22px !important;
   color: #fc6;
 }
 .filterContent .row div .card-action .price {
@@ -509,6 +517,17 @@ i
 }
 .clearfix {
   clear: none;
+}
+@media only screen and (max-width: 600px) {
+  .filterContent .row div .card-action {
+    padding: 20px 0;
+  }
+  .filterContent .row div .card-action .col {
+    padding: 0;
+  }
+  .filterContent .row div .card-action i {
+    font-size: 23px !important;
+  }
 }
 /*END filter content*/
 /*item*/
@@ -558,4 +577,73 @@ i
   border: 1px solid #ddd;
   padding: 10px;
 }
+@media only screen and (max-width: 600px) {
+  .itemSec .container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .itemSec .container .row .col {
+    padding: 0;
+  }
+  .itemSec .container .row .card .card-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  .itemSec .container .row .card .card-image img {
+    max-width: none;
+    width: 100%;
+  }
+  .itemSec .container .row .card .card-stacked .card-content {
+    padding: 0 2px 2px 2px;
+  }
+}
 /*END item*/
+/*-----------------------------------------------------------------INFORMATION PAGE----------------*/
+/*information slideshow*/
+.infoSlides .carousel {
+  height: 531px !important;
+}
+.infoSlides .carousel .carousel-item {
+  width: 830px;
+  height: 480px !important;
+  top: 170px;
+}
+.infoSlides .carousel .carousel-item img {
+  height: 100%;
+}
+/*END information slideshow*/
+/*about*/
+.about .container .row h4 {
+  font-weight: 200;
+}
+.about .container .row .sec1 {
+  padding-right: 50px;
+}
+.about .container .row .sec1 div i {
+  margin-top: 7px;
+  color: #ccc;
+}
+.about .container .row .caption {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+/*END about*/
+/*map*/
+.map img {
+  width: 100%;
+}
+/*END map*/
+/*lips*/
+.info .lips {
+  background: #000;
+  padding: 20px;
+}
+.info .lips img {
+  width: 100%;
+}
+/*END lips*/

@@ -45,11 +45,13 @@ $(document).ready(function(){
       onClose: function(el) { alert('Closed'); } // Callback for Collapsible close
     }
   );
-  /**/
+  /*--------------------------------*/
   $('.parallax').parallax();
   /**/
+  /*-----------------Information set---------------*/
+  $('.carousel').carousel();
+  /**/
+  /*--------------------------------*/
   $('.materialboxed').materialbox();
-/*END Visualization Categori Content*/
-/*---------------------------------Price input RANGE*/
-/*--------------------------------END Price input RANGE*/
+  /**/
 });   

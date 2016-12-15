@@ -1,0 +1,33 @@
+doctype
+html(lang="en")
+	head
+		include components/head.jade
+	body
+		//main container
+		main
+			//INFORMATION SECTION
+			.info
+				//menu information section
+				.container
+					//menu
+					include components/menu.jade
+					//END menu
+				//information slideshow
+				.infoSlides
+					include components/infoSlideshow.jade
+				//END information slideshow
+				//about
+				.about
+					include components/about.jade
+				//END about
+				//map
+				.map
+					include components/map.jade
+				//END map
+				//footer
+				#footer
+					include components/footer.jade
+				//END footer
+			//END INFORMATION SECTION
+		//END main container
+		include components/libs.jade
